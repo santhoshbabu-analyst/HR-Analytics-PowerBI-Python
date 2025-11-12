@@ -109,6 +109,7 @@ It calculates KPIs and generates charts for insights on workforce composition, p
 
 ### **1️⃣ KPI Summary**
 📊 Displays key HR metrics — Total Employees, Turnover Rate (%), Workforce Cost (M), and Avg. Salary (K).  
+
 ![KPI Summary](Images/kpi.png)
 
 ---
