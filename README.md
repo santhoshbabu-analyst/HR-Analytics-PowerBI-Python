@@ -88,7 +88,7 @@ It showcases:
 
 ---
 
-🔗 **[View Interactive Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiOTlhMDUwMzUtYjVlOC00M2UyLWE5M2QtNzcxNWRjNGJhYmYzIiwidCI6IjA2YzRkZTk4LTFlY2UtNDdiOC04OTI2LWNhYTAxOTU2MWQ1NyJ9&pageName=57fd4f24126ef69b0e31)**
+🔗 **[View Interactive Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiODNkYzBkYzAtNmY3MS00Yjc5LTllNTAtZmU2NjNkMGQ5ODg5IiwidCI6IjA2YzRkZTk4LTFlY2UtNDdiOC04OTI2LWNhYTAxOTU2MWQ1NyJ9)**
 
 ---
 
