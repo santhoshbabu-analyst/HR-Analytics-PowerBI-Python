@@ -1,184 +1,181 @@
-# 🧠 HR Analytics | Power BI & Python
+# 🧠 HR Analytics | Python, Power BI
 
-This project presents a **comprehensive HR Analytics Dashboard** built using **Power BI** and **Python (Matplotlib & Pandas)**.  
-It analyzes workforce data to uncover insights on employee demographics, turnover, satisfaction, and performance — enabling data-driven HR decisions.
+
+This project focuses on **Exploratory Data Analysis (EDA)** of HR data using **Python (Pandas & Matplotlib)**, followed by an **interactive Power BI dashboard** for stakeholder-level insights.  
+The objective is to analyze workforce demographics, attrition, satisfaction, and performance to support **data-driven HR decision-making**.
 
 ---
 
 ## 📊 Project Overview
 
-The **HR Analytics Dashboard** combines Power BI’s interactivity with Python’s analytical power.  
-It integrates multiple HR datasets to calculate KPIs, visualize workforce trends, and measure employee engagement and satisfaction.  
+The project follows a **two-step analytics approach**:
+
+1. **Exploratory Data Analysis (EDA) using Python** to clean, analyze, and understand HR data patterns  
+2. **Interactive Power BI Dashboard** to communicate insights through KPIs and visuals  
+
+This approach mirrors real-world analytics workflows where **EDA precedes dashboarding**.
 
 ---
 
 ## 🧠 Business Objectives
 
+- Perform **Exploratory Data Analysis (EDA)** on HR data  
 - Track **employee headcount**, **active workforce**, and **turnover rate**  
 - Analyze **demographic patterns** (age, gender, department, job level)  
 - Evaluate **satisfaction**, **performance**, and **engagement** metrics  
 - Calculate **workforce cost** and **average salary** insights  
-- Build **interactive Power BI dashboards** and **Python-based visuals**  
+- Present insights through **Power BI dashboards** for decision-makers  
 
 ---
 
 ## 🧾 Dataset Details
 
 | Dataset File | Description |
-|---------------|-------------|
-| **Employees.xlsx** | Contains employee demographics, department, job level, and salary details |
-| **Dim_monthly_performance.xlsx** | Includes monthly performance, manager evaluation, satisfaction, and engagement data |
-| **Calender.xlsx** | Provides date and time-based hierarchy used for trend analysis |
+|--------------|-------------|
+| **Employees.xlsx** | Employee demographics, department, job level, and salary data |
+| **Dim_monthly_performance.xlsx** | Monthly performance, manager evaluation, satisfaction, and engagement |
+| **Calender.xlsx** | Date and time hierarchy for trend analysis |
 
-📦 These datasets are stored in the **`Data/`** folder and used in both the Python notebook and Power BI dashboard.
+📦 Datasets are stored in the **`Data/`** folder and used for both Python EDA and Power BI reporting.
 
 ---
 
 ## ⚙️ Tools & Technologies Used
 
 | Tool | Purpose |
-|------|----------|
-| **Power BI** | Data modeling, DAX KPIs, and interactive dashboards |
-| **Python (Pandas, Matplotlib)** | Data cleaning, KPI calculation, and chart generation |
-| **Excel / CSV Files** | Base HR datasets |
-| **Power Query** | Data transformation and model relationships |
-| **DAX** | Calculations for turnover, satisfaction, and salary metrics |
+|------|--------|
+| **Python (Pandas, Matplotlib)** | Exploratory Data Analysis, data cleaning, KPI calculation, visualization |
+| **Power BI** | Data modeling, DAX measures, interactive dashboards |
+| **Power Query** | Data transformation and relationships |
+| **DAX** | KPI calculations (turnover, satisfaction, workforce cost) |
 
 ---
 
-## 💡 Key HR Insights
+## 🐍 Python Exploratory Data Analysis (EDA)
+
+The **Python notebook (`Python/HR_Analytics.ipynb`)** performs detailed **Exploratory Data Analysis (EDA)** to understand workforce structure, trends, and performance patterns before visualization.
+
+### 🔹 EDA Activities
+- Data loading and structure validation  
+- Handling missing values and data consistency checks  
+- Univariate and bivariate analysis  
+- KPI calculation using Python  
+- Visualization of trends and distributions  
+
+### 🔹 Python Features
+- Automated KPI generation  
+- Bar, Donut, and Trend charts  
+- Exported `.png` visuals for reporting  
+- Power BI–style formatting for consistency  
+
+---
+
+## 🖼️ Python Visualization Preview
+
+### **1️⃣ KPI Summary**
+📊 Total Employees, Turnover Rate (%), Workforce Cost (M), Avg Salary (K)  
+![KPI Summary](Images/kpi.png)
+
+---
+
+### **2️⃣ Employees by Employment Type**
+🧩 Full-time, Part-time, Seasonal, Contractor  
+![Employees by Employment Type](Images/v01_employment_type.png)
+
+---
+
+### **3️⃣ Managers by Status**
+👔 Manager, Senior Manager, Executive  
+![Managers by Status](Images/v02_managers_status.png)
+
+---
+
+### **4️⃣ Employee Distribution by Age Group & Gender (%)**
+📈 Gender distribution across age groups  
+![Age Group & Gender](Images/v04_age_gender_pct.png)
+
+---
+
+### **5️⃣ Employees by Satisfaction Category**
+💬 Very Satisfied, Satisfied, Neutral, Dissatisfied  
+![Satisfaction Category](Images/v17_satisfaction.png)
+
+---
+
+### **6️⃣ Employee Projection by Job Level**
+📊 Entry, Associate, Manager  
+![Employee Projection](Images/v11_job_level.png)
+
+---
+
+### **7️⃣ Yearly Active Employee Trend**
+📅 Active workforce trend over time  
+![Active Employee Trend](Images/v09_active_trend.png)
+
+---
+
+### **8️⃣ Yearly Employee Headcount (Derived)**
+📅 Derived headcount trend  
+![Employee Headcount Trend](Images/v08_headcount_trend_derived.png)
+
+---
+
+## 💡 Key HR Insights (From EDA)
 
 - 👥 **Total Employees:** 7,500  
 - ✅ **Active Employees:** 6,009  
 - 🔁 **Turnover Rate:** 19.9%  
 - 💰 **Annual Workforce Cost:** 204.4M  
 - 🧾 **Average Salary:** 27.3K  
-- 💬 **High Satisfaction:** 86% employees rated Satisfied or above  
-- 🚀 **Workforce Growth:** Consistent growth in active employees post-2017  
+- 💬 **86% employees** rated Satisfied or above  
+- 🚀 **Consistent workforce growth** after 2017  
 
 ---
 
-## 📊 Power BI Dashboard Preview
+## 📊 Power BI Dashboard (Storytelling Layer)
 
-The Power BI dashboard consists of two main pages: **Demographics** and **Performance**, offering interactive insights into HR data.
+After completing EDA, insights were translated into an **interactive Power BI dashboard** for HR stakeholders.
+
+🔗 **[View Interactive Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiODNkYzBkYzAtNmY3MS00Yjc5LTllNTAtZmU2NjNkMGQ5ODg5IiwidCI6IjA2YzRkZTk4LTFlY2UtNDdiOC04OTI2LWNhYTAxOTU2MWQ1NyJ9)**
 
 ---
 
 ### **1️⃣ Demographics Page**
-Focuses on the **overall workforce structure** and employee distribution.  
-It includes:  
-- Workforce by **employment type** and **manager status**  
-- KPIs for **total employees**, **turnover rate**, **salary**, and **workforce cost**  
-- **Gender and age group** breakdown  
-- **Yearly headcount** and regional trends  
+Focuses on workforce composition and trends:
+- Employment type and manager status  
+- KPIs: headcount, turnover, salary, workforce cost  
+- Gender, age group, and regional analysis  
+- Yearly headcount trends  
 
 ![Demographics Dashboard](Images/Demographics.png)
 
 ---
 
 ### **2️⃣ Performance Page**
-Highlights employee **performance**, **satisfaction**, and **evaluation** metrics.  
-It showcases:  
-- **Satisfaction**, **Evaluation**, and **Rating** category analysis  
-- **Performance by Job Level** and **Career Projection**  
-- **Satisfaction vs Evaluation** comparison  
-- Departmental performance by **gender and experience**  
+Analyzes employee performance and engagement:
+- Satisfaction and evaluation categories  
+- Performance by job level and career projection  
+- Satisfaction vs evaluation comparison  
+- Departmental performance by gender and experience  
 
 ![Performance Dashboard](Images/Performance.png)
 
 ---
 
-🔗 **[View Interactive Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiODNkYzBkYzAtNmY3MS00Yjc5LTllNTAtZmU2NjNkMGQ5ODg5IiwidCI6IjA2YzRkZTk4LTFlY2UtNDdiOC04OTI2LWNhYTAxOTU2MWQ1NyJ9)**
+## 📈 Final Insights & Business Impact
 
----
-
-## 🐍 Python Notebook Overview
-
-The **Python notebook (`Python/HR_Analytics.ipynb`)** replicates Power BI-style visuals programmatically.  
-It calculates KPIs and generates charts for insights on workforce composition, performance, and engagement.
-
-### **Features**
-- Automated KPI generation  
-- Bar, Donut, and Trend charts  
-- Exported `.png` visuals for reporting  
-- Power BI–style formatting and labels  
-
----
-
-## 🖼️ Visualization Preview (Python)
-
-### **1️⃣ KPI Summary**
-📊 Displays key HR metrics — Total Employees, Turnover Rate (%), Workforce Cost (M), and Avg. Salary (K).  
-
-![KPI Summary](Images/kpi.png)
-
----
-
-### **2️⃣ Employees by Employment Type**
-🧩 Breakdown of workforce by employment type: Full-time, Part-time, Seasonal, and Contractor.  
-
-![Employees by Employment Type](Images/v01_employment_type.png)
-
----
-
-### **3️⃣ Managers by Status**
-👔 Distribution of Managers by job status — Manager, Senior Manager, and Executive. 
-
-![Managers by Status](Images/v02_managers_status.png)
-
----
-
-### **4️⃣ Employee Distribution by Age Group & Gender (%)**
-📈 Gender ratio across employee age groups.  
-
-![Age Group & Gender](Images/v04_age_gender_pct.png)
-
----
-
-### **5️⃣ Employees by Satisfaction Category**
-💬 Satisfaction levels categorized as Very Satisfied, Satisfied, Neutral, and Dissatisfied.  
-
-![Satisfaction Category](Images/v17_satisfaction.png)
-
----
-
-### **6️⃣ Employee Projection by Job Level**
-📊 Employee count across job levels — Entry, Associate, and Manager.  
-
-![Employee Projection](Images/v11_job_level.png)
-
----
-
-### **7️⃣ Yearly Active Employee Trend**
-📅 Active employee growth trend by year of hire.  
-
-![Active Employee Trend](Images/v09_active_trend.png)
-
----
-
-### **8️⃣ Yearly Employee Headcount (Derived)**
-📅 Derived headcount trend over time. 
-
-![Employee Headcount Trend](Images/v08_headcount_trend_derived.png)
-
----
-
-## 📈 Insights Gained
-
-- 🚀 Steady employee growth since 2017  
-- 💬 Engagement and satisfaction strongly influence retention  
-- 💼 Departments with better manager evaluations show higher productivity  
+- 🚀 Stable workforce growth since 2017  
+- 💬 Satisfaction and engagement strongly influence retention  
+- 💼 Strong manager evaluation correlates with higher productivity  
 - 📊 Turnover maintained below 20%  
-- 👩‍💼 Gender balance achieved across multiple job levels  
+- 👩‍💼 Balanced gender representation across job levels  
 
 ---
 
 ## 📬 Contact
 
 **👤 Santhosh Babu S**  
-🎯 *Data Analyst | Power BI | Python | SQL | Excel*  
+🎯 *Data Analyst | Power BI | Python | SQL*  
 
-📧 **Email:** [santhoshbabus.analyst@gmail.com](mailto:santhoshbabus.analyst@gmail.com)  
-🔗 [**LinkedIn**](https://www.linkedin.com/in/santhoshbabus/) | [**GitHub**](https://github.com/santhoshbabu-analyst)
-
----
+📧 **Email:** santhoshbabus.analyst@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/santhoshbabus/) | [GitHub](https://github.com/santhoshbabu-analyst)
